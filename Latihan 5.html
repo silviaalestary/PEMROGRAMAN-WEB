@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 - Formulir Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(236, 204, 221);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color:rgb(118, 3, 152);
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"], select, input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(118, 3, 152);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(118, 3, 152);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Biodata</h1>
+
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="TempatLahir">Tempat Lahir</label></td>
+                <td>:</td>
+                <td><input type="text" id="TempatLahir" name="Tempat Lahir" required></td>
+            </tr>
+            <tr>
+                <td><label for="TanggalLahir">Tanggal Lahir</label></td>
+                <td>:</td>
+                <td><input type="date" id="TanggalLahir" name="Tanggal Lahir" required></td>
+            </tr>
+            <tr>
+                <td><label for="Alamat">Alamat</label></td>
+                <td>:</td>
+                <td><input type="text" id="Alamat" name="Alamat" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" id="baca" name="hobi" value="Baca">
+                    <label for="baca">Baca</label>
+                    <input type="checkbox" id="mancing" name="hobi" value="Mancing">
+                    <label for="mancing">Mancing</label>
+                    <input type="checkbox" id="nulis" name="hobi" value="Nulis">
+                    <label for="nulis">Nulis</label>
+                    <input type="checkbox" id="rebahan" name="hobi" value="Rebahan">
+                    <label for="rebahan">Rebahan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>:</td>
+                <td>
+                    <select id="pekerjaan" name="pekerjaan">
+                        <option value="Wiraswasta">Wiraswasta</option>
+                        <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+                        <option value="Pegawai Negeri">Pegawai Negeri</option>
+                        <option value="Pegawai Swasta">Pegawai Swasta</option>
+                        <option value="Wirausaha">Wirausaha</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
